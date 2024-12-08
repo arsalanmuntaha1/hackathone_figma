@@ -1,12 +1,17 @@
 import { inter } from '@/app/layout';
 import Image from 'next/image';
 import React from 'react';
+import { AiFillYoutube, AiOutlineInstagram } from 'react-icons/ai';
+import { FaFacebookF, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { PiClockClockwiseLight } from 'react-icons/pi';
+import { RiPinterestFill } from 'react-icons/ri';
+import { SlSocialFacebook } from 'react-icons/sl';
+import { TiSocialFacebook, TiSocialTwitter } from 'react-icons/ti';
 
 function Footer() {
     return (
         <div className={`${inter.className} text-textColor mt-[120px]`}>
-            <div className="flex justify-around">
+            <div className="flex justify-around pb-16">
                 <div>
                     <h4 className="text-primary3 font-bold text-[32px] pb-[17px]">
                         St<span className="text-textColor  ">ill You Need Our Support ?</span>
@@ -27,7 +32,7 @@ function Footer() {
                 </div>
             </div>
             <hr />
-            <div className="container flex justify-self-center">
+            <div className="container flex justify-self-center py-[46px] ">
                 <div className="w-4/12">
                     <h5 className="font-bold text-2xl mb-6">About Us.</h5>
                     <p>
@@ -48,8 +53,8 @@ function Footer() {
                 </div>
                 <div className="w-2/12"></div>
                 <div className="w-2/12">
-                    <h5 className="font-bold text-2xl">Useful Links</h5>
-                    <ul className="text-xl ">
+                    <h5 className="font-bold text-2xl mb-6">Useful Links</h5>
+                    <ul className="text-xl flex flex-col gap-6">
                         <li>About</li>
                         <li>News</li>
                         <li>Partners</li>
@@ -59,8 +64,8 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="w-2/12">
-                    <h5 className="font-bold text-2xl">Help?</h5>
-                    <ul>
+                    <h5 className="font-bold text-2xl mb-6">Help?</h5>
+                    <ul className='text-xl flex flex-col gap-6'>
                         <li>FAQ</li>
                         <li>Term & conditions</li>
                         <li>Reporting</li>
@@ -70,7 +75,7 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="w-2/12">
-                    <h5 className="font-bold text-2xl mb-[23px]">Recent Post</h5>
+                    <h5 className="font-bold text-2xl mb-6">Recent Post</h5>
                     <div className="flex gap-4">
                         <div>
                             <Image
@@ -85,7 +90,7 @@ function Footer() {
                             <p className="text-lg">Keep Your Business </p>
                         </div>
                     </div>
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 my-[14px]">
                         <div>
                             <Image
                                 src={'/assets/recentpost2.svg'}
@@ -116,8 +121,25 @@ function Footer() {
                 </div>
             </div>
             <div>
-                <div className="bg-footer">
+                <div className="bg-grey flex justify-around py-[38px]">
                     <p>Copyright © 2022 by Ayeman. All Rights Reserved.</p>
+                    <div className="flex gap-[14px]">
+                        <div className="bg-textColor p-2 rounded-sm">
+                            <FaFacebookF className='text-grey'/>
+                        </div>
+                        <div className="bg-textColor p-2 rounded-sm">
+                            <FaTwitter className='text-grey'/>
+                        </div>
+                        <div className="bg-textColor p-2 rounded-sm">
+                            <FaInstagram className='text-grey'/>
+                        </div>
+                        <div className="bg-textColor p-2 rounded-sm">
+                            <FaYoutube className='text-primary3'/>
+                        </div>
+                        <div className="bg-textColor p-2 rounded-sm">
+                            <FaPinterest className='text-grey'/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

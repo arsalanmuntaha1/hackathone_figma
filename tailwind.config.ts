@@ -17,7 +17,7 @@ const config: Config = {
                 secondary3: '#999966',
                 textColor: '#FFFFFF',
                 bg: '#0D0D0D',
-                footer: '#4F4F4F'
+                grey: '#4F4F4F',
             },
             backgroundImage: {
                 hero_img: "url('/assets/heroBg.svg')",
