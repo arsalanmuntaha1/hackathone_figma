@@ -5,7 +5,7 @@ import { FaFacebookF } from 'react-icons/fa';
 
 function Hero() {
     return <div className='bg-[url("/assets/heroBg.svg")] bg-blend-overlay h-[950px] bg-no-repeat bg-cover'>
-        <div className=' bg-[#0D0D0D] opacity-[95%] h-[950px]'>
+        <div className=' bg-[#0D0D0D] opacity-[85%] h-[950px]'>
             <Navbar/>
         <div className="w-[85%] pt-10 flex place-self-center justify-between">
             <div className='w-5/12 flex gap-10 text-white'>

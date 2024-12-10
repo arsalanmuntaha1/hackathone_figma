@@ -18,7 +18,11 @@ const config: Config = {
                 textColor: '#FFFFFF',
                 bg: '#0D0D0D',
                 grey: '#4F4F4F',
+                text: '#333333',
             },
+            boxShadow: {
+                custom: '0 0 80px 0 rgba(205, 205, 205, 0.25)',
+              },
             backgroundImage: {
                 hero_img: "url('/assets/heroBg.svg')",
             },
