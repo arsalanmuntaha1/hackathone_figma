@@ -22,7 +22,8 @@ const config: Config = {
             },
             boxShadow: {
                 custom: '0 0 80px 0 rgba(205, 205, 205, 0.25)',
-              },
+            },
+
             backgroundImage: {
                 hero_img: "url('/assets/heroBg.svg')",
             },

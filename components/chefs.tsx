@@ -4,7 +4,7 @@ import { greatVibes, inter } from '@/app/layout';
 
 function Chefs() {
     return (
-        <div className={`${inter.className} bg-[url("/assets/MaskGroup1.png")] bg-center text-textColor py-28`}>
+        <div className={`${inter.className} bg-[url("/assets/MaskGroup1.png")] bg-cover bg-no-repeat bg-center text-textColor py-28`}>
             <div className="place-items-center">
                 <h1 className={`${greatVibes.className} text-primary3 text-[32px]`}>Chefs</h1>
                 <h2 className="text-primary3 font-bold text-5xl">

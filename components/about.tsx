@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 function About() {
     return (
-        <div className={`${inter.className} w-[100%] flex justify-center gap-[98px] mt-[120px] mb-[72px] text-textColor`}>
+        <div className={`${inter.className} w-[100%] flex justify-center gap-[98px] mt-[120px]  text-textColor`}>
             <div className=" w-[30%] flex flex-col ">
                 <h3 className={`${greatVibes.className} text-[32px] text-primary3`}>About us</h3>
                 <p className={`text-primary3 font-bold text-5xl mt-2 mb-8 `}>

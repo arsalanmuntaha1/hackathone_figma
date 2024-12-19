@@ -6,7 +6,7 @@ import { PiQuotesLight } from 'react-icons/pi';
 
 function Testimonials() {
     return (
-        <div className={`${inter.className} w-[100%] place-items-center`}>
+        <div className={`${inter.className} bg-[url("/assets/MaskGroup.png")] bg-cover bg-no-repeat w-[100%] my-28 place-items-center`}>
             <div className="place-items-center">
                 <h1 className={`${greatVibes.className} text-primary3 text-[32px]`}>
                     Testimonials

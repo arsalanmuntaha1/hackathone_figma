@@ -1,64 +1,118 @@
-import { inter } from '@/app/layout';
+import { greatVibes, inter } from '@/app/layout';
 import Image from 'next/image';
 import React from 'react';
+import { LuCookie } from 'react-icons/lu';
+import { PiWineDuotone } from 'react-icons/pi';
+import { SiBurgerking } from 'react-icons/si';
 
 function WhyChooseUs() {
     return (
-        <div className="bg-black text-white p-8">
-            <div className="grid md:grid-cols-2 gap-8">
-                {/* <!-- Left Side: Image Grid --> */}
-                <div className="grid grid-cols-2 gap-4">
-                <div className="row-span-2">
-                    <Image height={100} width={100} src="path-to-image1.jpg" alt="Tacos" className="rounded-lg w-full h-full object-cover" />
+        <div className={`${inter.className} text-textColor flex gap-32 justify-center py-28 `}>
+            <div className="w-1/4">
+                {/* <!-- Left Side --> */}
+                <div className="flex gap-4">
+                    <div>
+                        {' '}
+                        <Image
+                            height={356}
+                            width={362}
+                            src="/assets/wraps.svg"
+                            alt="Tacos"
+                            className="rounded-md "
+                        />
+                    </div>
+                    <div>
+                        {' '}
+                        <Image
+                            height={231}
+                            width={281}
+                            src="/assets/burger.svg"
+                            alt="Burger"
+                            className="rounded-md mt-[66px] "
+                        />
+                    </div>
                 </div>
-                <div>
-                    <Image height={100} width={100} src="path-to-image2.jpg" alt="Burger" className="rounded-lg w-full h-full object-cover" />
+                <div className="flex gap-4 pt-4">
+                    <div>
+                        <Image
+                            height={306}
+                            width={244}
+                            src="/assets/chickenDip.svg"
+                            alt="Chicken Dip"
+                            className="rounded-md"
+                        />
+                    </div>
+
+                    <div>
+                        <Image
+                            height={226}
+                            width={221}
+                            src="/assets/menu_2.svg"
+                            alt="Cheeseburger"
+                            className="rounded-md "
+                        />
+                    </div>
+                    <div className="flex flex-col gap-4">
+                        <div>
+                            {' '}
+                            <Image
+                                height={168}
+                                width={161}
+                                src="/assets/dip.svg"
+                                alt="Fries and Burger"
+                                className="rounded-md "
+                            />
+                        </div>
+                        <div>
+                            {' '}
+                            <Image
+                                height={166}
+                                width={161}
+                                src="/assets/plate.svg"
+                                alt="Salad"
+                                className="rounded-md "
+                            />
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <Image height={100} width={100} src="path-to-image3.jpg" alt="Chicken Dip" className="rounded-lg w-full h-full object-cover" />
-                </div>
-                <div className="col-span-2">
-                    <Image height={100} width={100} src="path-to-image4.jpg" alt="Cheeseburger" className="rounded-lg w-full h-full object-cover" />
-                </div>
-                <div>
-                    <Image height={100} width={100} src="path-to-image5.jpg" alt="Fries and Burger" className="rounded-lg w-full h-full object-cover" />
-                </div>
-                <div>
-                    <Image height={100} width={100} src="path-to-image6.jpg" alt="Salad" className="rounded-lg w-full h-full object-cover" />
-                </div>
-                </div>
-                
-                {/* <!-- Right Side: Text Content --> */}
-                <div className="flex flex-col justify-center">
-                <div>
-                    <h3 className="text-orange-400 text-xl font-semibold mb-2">Why Choose us</h3>
-                    <h2 className="text-4xl font-bold mb-4">
-                    <span className="text-orange-400">Extra</span> ordinary taste <br> And Experienced
-                    </h2>
-                    <p className="text-gray-400 mb-8">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum.
-                    </p>
-                    <div className="flex space-x-8 mb-8">
-                    <div className="text-center">
-                        <div className="text-orange-400 text-3xl mb-2">🍔</div>
+            </div>
+
+            {/* <!-- Right Side: Text Content --> */}
+            <div className="w-1/4">
+                <h1 className={`${greatVibes.className} text-primary3 text-[32px]`}>
+                    Why Choose us
+                </h1>
+                <h2 className="text-primary3 font-bold text-5xl mt-2">
+                    Ex<span className="text-textColor">tra ordinary taste And Experienced </span>
+                </h2>
+                <p className="my-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam
+                    pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue
+                    urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus
+                    risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
+                </p>
+                <div className="flex gap-9 text-center">
+                    <div>
+                        <div className="p-6 flex bg-primary3 rounded-md">
+                            <SiBurgerking size={56} />
+                        </div>
                         <p>Fast Food</p>
                     </div>
-                    <div className="text-center">
-                        <div className="text-orange-400 text-3xl mb-2">🥗</div>
+                    <div>
+                        <div className="p-6 bg-primary3 rounded-md">
+                            <LuCookie size={56} />
+                        </div>
                         <p>Lunch</p>
                     </div>
-                    <div className="text-center">
-                        <div className="text-orange-400 text-3xl mb-2">🍷</div>
+                    <div>
+                        <div className="p-6 bg-primary3 rounded-md">
+                            <PiWineDuotone size={56} />
+                        </div>
                         <p>Dinner</p>
-                    </div>
-                    </div>
-                    <div className="text-2xl font-bold">
-                    <span className="text-orange-400 text-5xl">30+</span> Years of <span className="text-orange-400">Experienced</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     );
 }
 
