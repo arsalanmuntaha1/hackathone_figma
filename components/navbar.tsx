@@ -13,7 +13,7 @@ function Navbar() {
                     <span className="text-textColor">tuck</span>
                 </h1>
             </div>
-            <div className='flex justify-around items-center'>
+            <div className='container flex justify-between items-center'>
                 <div className=''>
                     <ul className='text-textColor flex gap-8 '>
                         <li>Home</li>

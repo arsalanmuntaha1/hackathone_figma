@@ -6,6 +6,11 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-/* .container {
-    padding: 0px 10%;
-} */
+.container {
+    width: 70%;
+    place-self: center;
+}
+.container-fluid {
+    width: 85%;
+    place-self: center;
+}
