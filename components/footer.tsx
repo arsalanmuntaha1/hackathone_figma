@@ -1,12 +1,8 @@
 import { inter } from '@/app/layout';
 import Image from 'next/image';
 import React from 'react';
-import { AiFillYoutube, AiOutlineInstagram } from 'react-icons/ai';
 import { FaFacebookF, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { PiClockClockwiseLight } from 'react-icons/pi';
-import { RiPinterestFill } from 'react-icons/ri';
-import { SlSocialFacebook } from 'react-icons/sl';
-import { TiSocialFacebook, TiSocialTwitter } from 'react-icons/ti';
 
 function Footer() {
     return (
@@ -65,7 +61,7 @@ function Footer() {
                 </div>
                 <div className="w-2/12">
                     <h5 className="font-bold text-2xl mb-6">Help?</h5>
-                    <ul className='text-xl flex flex-col gap-6'>
+                    <ul className="text-xl flex flex-col gap-6">
                         <li>FAQ</li>
                         <li>Term & conditions</li>
                         <li>Reporting</li>
@@ -125,19 +121,19 @@ function Footer() {
                     <p>Copyright © 2022 by Ayeman. All Rights Reserved.</p>
                     <div className="flex gap-[14px]">
                         <div className="bg-textColor p-2 rounded-sm">
-                            <FaFacebookF className='text-grey'/>
+                            <FaFacebookF className="text-grey" />
                         </div>
                         <div className="bg-textColor p-2 rounded-sm">
-                            <FaTwitter className='text-grey'/>
+                            <FaTwitter className="text-grey" />
                         </div>
                         <div className="bg-textColor p-2 rounded-sm">
-                            <FaInstagram className='text-grey'/>
+                            <FaInstagram className="text-grey" />
                         </div>
                         <div className="bg-textColor p-2 rounded-sm">
-                            <FaYoutube className='text-primary3'/>
+                            <FaYoutube className="text-primary3" />
                         </div>
                         <div className="bg-textColor p-2 rounded-sm">
-                            <FaPinterest className='text-grey'/>
+                            <FaPinterest className="text-grey" />
                         </div>
                     </div>
                 </div>

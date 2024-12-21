@@ -1,11 +1,18 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Inter, Great_Vibes } from 'next/font/google';
+import localFont from 'next/font/local';
 import Footer from '@/components/footer';
+
+export const helvetica = localFont({
+    src: './fonts/Helvetica.ttf',
+    weight: ' 400',
+    // style?: ,
+});
 
 export const greatVibes = Great_Vibes({
     subsets: ['latin'],
-    weight: ['400'], 
+    weight: ['400'],
 });
 
 export const inter = Inter({
