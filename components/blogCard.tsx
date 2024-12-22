@@ -1,4 +1,4 @@
-import { inter } from '@/app/fonts/index';
+import { helvetica, inter } from '@/app/fonts/index';
 import Image from 'next/image';
 import React from 'react';
 import { FaRegThumbsUp, FaShareAlt } from 'react-icons/fa';
@@ -19,7 +19,7 @@ function BlogCard({ image, date, details }: blogProps) {
             </div>
             <div className="my-5 px-10">
                 <p className="text-primary3">{date}</p>
-                <h5 className="font-bold text-2xl pt-4 pb-8">{details}</h5>
+                <h5 className={`${helvetica.className} font-bold text-2xl pt-4 pb-8`}>{details}</h5>
                 <div className="flex justify-between">
                     <button>Learn More</button>
                     <div className="flex gap-2">

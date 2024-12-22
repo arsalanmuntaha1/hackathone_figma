@@ -1,4 +1,4 @@
-import { greatVibes } from '@/app/fonts/index';
+import { greatVibes, helvetica } from '@/app/fonts/index';
 import React from 'react';
 import BlogCard from './blogCard';
 
@@ -7,7 +7,7 @@ function Blog() {
         <div className="my-[120px]">
             <div className="place-items-center">
                 <h1 className={`${greatVibes.className} text-primary3 text-[32px]`}>Blog Post</h1>
-                <h2 className="text-primary3 font-bold text-5xl mb-14 mt-2">
+                <h2 className={`${helvetica.className} text-primary3 font-bold text-5xl mb-14 mt-2`}>
                     La<span className="text-textColor">test News & Blog</span>
                 </h2>
             </div>

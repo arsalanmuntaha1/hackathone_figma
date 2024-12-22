@@ -1,4 +1,4 @@
-import { inter } from '@/app/fonts/index';
+import { helvetica, inter } from '@/app/fonts/index';
 import React from 'react';
 import { FiSearch } from 'react-icons/fi';
 import { LiaShoppingBagSolid } from 'react-icons/lia';
@@ -6,9 +6,9 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 
 function Navbar() {
     return (
-        <div className="pt-[45px] ">
+        <div className={`${inter.className} pt-[45px] `}>
             <div className="text-center pb-4 ">
-                <h1 className="font-bold text-2xl text-primary3">
+                <h1 className={`${helvetica.className} font-bold text-2xl text-primary3`}>
                     Food
                     <span className="text-textColor">tuck</span>
                 </h1>

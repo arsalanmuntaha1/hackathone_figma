@@ -1,4 +1,4 @@
-import { greatVibes, inter } from '@/app/fonts/index';
+import { greatVibes, helvetica, inter } from '@/app/fonts/index';
 import Image from 'next/image';
 import React from 'react';
 
@@ -11,7 +11,7 @@ function FoodCategory() {
                 <h1 className={`${greatVibes.className} text-primary3 text-[32px]`}>
                     Food Category
                 </h1>
-                <h2 className="text-primary3 font-bold text-5xl mt-2 mb-14">
+                <h2 className={`${helvetica.className} text-primary3 font-bold text-5xl mt-2 mb-14`}>
                     Ch<span className="text-textColor">oose Food Iteam</span>
                 </h2>
             </div>

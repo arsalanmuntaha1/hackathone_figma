@@ -1,4 +1,4 @@
-import { greatVibes, inter } from '@/app/fonts/index';
+import { greatVibes, helvetica, inter } from '@/app/fonts/index';
 import Image from 'next/image';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
@@ -7,13 +7,15 @@ import { PiQuotesLight } from 'react-icons/pi';
 function Testimonials() {
     return (
         <div
-            className={`${inter.className} bg-[url("/assets/MaskGroup.png")] bg-cover bg-no-repeat w-[100%] my-28 place-items-center`}
+            className={`${helvetica.className} bg-[url("/assets/MaskGroup.png")] bg-cover bg-no-repeat w-[100%] my-28 place-items-center`}
         >
             <div className="place-items-center">
                 <h1 className={`${greatVibes.className} text-primary3 text-[32px]`}>
                     Testimonials
                 </h1>
-                <h2 className="text-textColor font-bold text-5xl">What our client are saying</h2>
+                <h2 className={` text-primary3 font-bold text-5xl`}>
+                    Wh<span className="text-textColor">at our client are saying</span>
+                </h2>
             </div>
             <div className="bg-textColor rounded-2xl  shadow-custom w-[40%] place-items-center mb-14 mt-28">
                 <Image

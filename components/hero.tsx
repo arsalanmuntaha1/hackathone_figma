@@ -1,10 +1,11 @@
 import React from 'react';
 import Navbar from './navbar';
 import Image from 'next/image';
-import { FaFacebookF } from 'react-icons/fa';
+import { FaFacebookF, FaPinterestP, FaTwitter } from 'react-icons/fa';
 
 import { Great_Vibes, Inter } from 'next/font/google';
 import Button from './ui/Button';
+import { helvetica } from '@/app/fonts';
 
 const greatVibes = Great_Vibes({
     subsets: ['latin'],
@@ -17,7 +18,7 @@ const inter = Inter({
 
 function Hero() {
     return (
-        <div className='bg-[url("/assets/heroBg.svg")] bg-blend-overlay h-[950px] bg-no-repeat bg-cover'>
+        <div className={`${inter.className} bg-[url("/assets/heroBg.svg")] bg-blend-overlay h-[950px] bg-no-repeat bg-cover`}>
             <div className=" bg-[#0D0D0D] opacity-[85%] h-[950px]">
                 <Navbar />
                 <div className="container-fluid pt-10 flex justify-between">
@@ -26,13 +27,13 @@ function Hero() {
                             <div className="w-px bg-gray-700 h-36"></div>
                             <ul className="grid gap-5 px-2 py-5">
                                 <li>
-                                    <FaFacebookF />
+                                    <FaFacebookF className='hover:text-primary3'/>
                                 </li>
                                 <li>
-                                    <FaFacebookF />
+                                    <FaTwitter className='hover:text-primary3'/>
                                 </li>
                                 <li>
-                                    <FaFacebookF />
+                                    <FaPinterestP className='hover:text-primary3'/>
                                 </li>
                             </ul>
                             <div className="w-px bg-gray-700 h-36"></div>
@@ -44,17 +45,17 @@ function Hero() {
                                 Its Quick & Amusing!
                             </pre>
                             <div className="grid gap-8">
-                                <h2 className="text-6xl font-bold">
+                                <h2 className={`${helvetica.className} text-6xl font-bold`}>
                                     <strong className="text-primary3">Th</strong>e Art of speed food
                                     Quality
                                 </h2>
-                                <p className={`text-lg ${inter.className}`}>
+                                <p className={`text-lg `}>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius
                                     sed pharetra dictum neque massa congue
                                 </p>
                                 <Button
                                     title="See Menu"
-                                    className="rounded-full py-4 px-14 w-fit"
+                                    className="rounded-full py-4 px-14 w-fit hover:text-primary3 hover:bg-textColor"
                                 />
                             </div>
                         </div>

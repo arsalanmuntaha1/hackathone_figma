@@ -1,4 +1,4 @@
-import { inter } from '@/app/fonts/index';
+import { helvetica, inter } from '@/app/fonts/index';
 import Image from 'next/image';
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
@@ -9,7 +9,9 @@ function Footer() {
         <div className={`${inter.className} text-textColor mt-[120px]`}>
             <div className="flex justify-around pb-16">
                 <div>
-                    <h4 className="text-primary3 font-bold text-[32px] pb-[17px]">
+                    <h4
+                        className={`${helvetica.className} text-primary3 font-bold text-[32px] pb-[17px]`}
+                    >
                         St<span className="text-textColor  ">ill You Need Our Support ?</span>
                     </h4>
                     <p>Don’t wait make a smart & logical quote here. Its pretty easy.</p>
@@ -30,7 +32,7 @@ function Footer() {
             <hr />
             <div className="container flex justify-self-center py-[46px] ">
                 <div className="w-4/12">
-                    <h5 className="font-bold text-2xl mb-6">About Us.</h5>
+                    <h5 className={`${helvetica.className} font-bold text-2xl mb-6`}>About Us.</h5>
                     <p>
                         orporate clients and leisure travelers has been relying on Groundlink for
                         dependab safe, and professional chauffeured car service in major cities
@@ -49,7 +51,9 @@ function Footer() {
                 </div>
                 <div className="w-2/12"></div>
                 <div className="w-2/12">
-                    <h5 className="font-bold text-2xl mb-6">Useful Links</h5>
+                    <h5 className={`${helvetica.className} font-bold text-2xl mb-6`}>
+                        Useful Links
+                    </h5>
                     <ul className="text-xl flex flex-col gap-6">
                         <li>About</li>
                         <li>News</li>
@@ -60,7 +64,7 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="w-2/12">
-                    <h5 className="font-bold text-2xl mb-6">Help?</h5>
+                    <h5 className={`${helvetica.className} font-bold text-2xl mb-6`}>Help?</h5>
                     <ul className="text-xl flex flex-col gap-6">
                         <li>FAQ</li>
                         <li>Term & conditions</li>
@@ -71,7 +75,9 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="w-2/12">
-                    <h5 className="font-bold text-2xl mb-6">Recent Post</h5>
+                    <h5 className={`${helvetica.className} font-bold text-2xl mb-6`}>
+                        Recent Post
+                    </h5>
                     <div className="flex gap-4">
                         <div>
                             <Image
@@ -121,19 +127,19 @@ function Footer() {
                     <p>Copyright © 2022 by Ayeman. All Rights Reserved.</p>
                     <div className="flex gap-[14px]">
                         <div className="bg-textColor p-2 rounded-sm">
-                            <FaFacebookF className="text-grey" />
+                            <FaFacebookF className="text-grey hover:text-primary3" />
                         </div>
                         <div className="bg-textColor p-2 rounded-sm">
-                            <FaTwitter className="text-grey" />
+                            <FaTwitter className="text-grey hover:text-primary3" />
                         </div>
                         <div className="bg-textColor p-2 rounded-sm">
-                            <FaInstagram className="text-grey" />
+                            <FaInstagram className="text-grey hover:text-primary3" />
                         </div>
                         <div className="bg-textColor p-2 rounded-sm">
-                            <FaYoutube className="text-primary3" />
+                            <FaYoutube className="text-grey hover:text-primary3" />
                         </div>
                         <div className="bg-textColor p-2 rounded-sm">
-                            <FaPinterest className="text-grey" />
+                            <FaPinterest className="text-grey hover:text-primary3" />
                         </div>
                     </div>
                 </div>

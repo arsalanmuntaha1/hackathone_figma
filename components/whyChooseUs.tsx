@@ -1,4 +1,4 @@
-import { greatVibes, inter } from '@/app/fonts/index';
+import { greatVibes, helvetica, inter } from '@/app/fonts/index';
 import Image from 'next/image';
 import React from 'react';
 import { LuCookie } from 'react-icons/lu';
@@ -82,8 +82,8 @@ function WhyChooseUs() {
                 <h1 className={`${greatVibes.className} text-primary3 text-[32px]`}>
                     Why Choose us
                 </h1>
-                <h2 className="text-primary3 font-bold text-5xl mt-2">
-                    Ex<span className="text-textColor">tra ordinary taste And Experienced </span>
+                <h2 className={`${helvetica.className} text-primary3 font-bold text-5xl mt-2`}>
+                    Ex<span className="text-textColor/p;">tra ordinary taste And Experienced </span>
                 </h2>
                 <p className="my-8">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam
@@ -109,6 +109,13 @@ function WhyChooseUs() {
                             <PiWineDuotone size={56} />
                         </div>
                         <p>Dinner</p>
+                    </div>
+                </div>
+                <div className='flex gap-12 rounded-md bg-textColor mt-[34px] py-5 px-12 w-fit border-l-8 border-primary3'>
+                    <div className={`${helvetica.className} font-bold text-5xl text-primary3 content-center`}><h2>30+</h2></div>
+                    <div className={`${inter.className} `}>
+                        <p className='text-[#1E1E1E] text-xl'>Years of</p>
+                        <h5 className={`${helvetica.className} text-2xl font-bold text-[#1E1E1E]`}>Experienced</h5>
                     </div>
                 </div>
             </div>

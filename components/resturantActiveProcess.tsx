@@ -1,4 +1,4 @@
-import { greatVibes, inter } from '@/app/fonts/index';
+import { greatVibes, helvetica, inter } from '@/app/fonts/index';
 import React from 'react';
 import { CiPlay1 } from 'react-icons/ci';
 
@@ -13,7 +13,7 @@ function ResturantActiveProcess() {
                 <h1 className={`${greatVibes.className} text-primary3 text-[32px]`}>
                     Restaurant Active Process
                 </h1>
-                <h2 className="text-primary3 font-bold text-5xl">
+                <h2 className={`${helvetica.className} text-primary3 font-bold text-5xl`}>
                     We{' '}
                     <span className="text-textColor">
                         Document Every Food Bean Process untile it is saved

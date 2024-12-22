@@ -1,14 +1,17 @@
-import { greatVibes, inter } from '@/app/fonts/index';
+import { greatVibes, helvetica, inter } from '@/app/fonts/index';
 import React from 'react';
 import { FaCheck } from 'react-icons/fa';
 import Image from 'next/image';
+import Button from './ui/Button';
 
 function About() {
     return (
-        <div className={`${inter.className} w-[100%] flex justify-center gap-[98px] mt-[120px]  text-textColor`}>
+        <div
+            className={`${inter.className} w-[100%] flex justify-center gap-[98px] mt-[120px]  text-textColor`}
+        >
             <div className=" w-[30%] flex flex-col ">
                 <h3 className={`${greatVibes.className} text-[32px] text-primary3`}>About us</h3>
-                <p className={`text-primary3 font-bold text-5xl mt-2 mb-8 `}>
+                <p className={`${helvetica.className} text-primary3 font-bold text-5xl mt-2 mb-8 `}>
                     We <span className="text-textColor">Create the best foody product</span>
                 </p>
                 <p>
@@ -17,7 +20,7 @@ function About() {
                     urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus
                     risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
                 </p>
-                <ul className='flex flex-col gap-6 mt-6 mb-8'>
+                <ul className="flex flex-col gap-6 mt-6 mb-8">
                     <li className="flex gap-[7px] items-center">
                         <span>
                             <FaCheck />
@@ -37,10 +40,10 @@ function About() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </li>
                 </ul>
-
-                <button className=" py-[18px] px-[54px] text-textColor bg-primary3 rounded-[30px] w-fit">
-                    Read More
-                </button>
+                <Button
+                    title="Read More"
+                    className="rounded-full py-4 px-14 w-fit hover:text-primary3 hover:bg-textColor"
+                />
             </div>
 
             <div className="w-[30%] grid grid-cols-2 grid-rows-2 gap-4">

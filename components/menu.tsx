@@ -1,4 +1,4 @@
-import { greatVibes, inter } from '@/app/fonts/index';
+import { greatVibes, helvetica, inter } from '@/app/fonts/index';
 import Image from 'next/image';
 import React from 'react';
 import Menucard from './menucard';
@@ -10,19 +10,19 @@ function Menu() {
                 <h1 className={`${greatVibes.className} text-[32px] text-primary3`}>
                     Choose & pick
                 </h1>
-                <h2 className="font-bold text-5xl text-primary3">
+                <h2 className={`${helvetica.className} font-bold text-5xl text-primary3`}>
                     Fr<span className="text-textColor">om Our Menu</span>
                 </h2>
             </div>
             <div className="py-14">
                 <ul className="flex flex-row gap-[100px] text-xl">
                     <li className="hover:text-primary3 hover:font-bold">Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Dinner</li>
-                    <li>Desert</li>
-                    <li>Drink</li>
-                    <li>Snack</li>
-                    <li>Soups</li>
+                    <li className="hover:text-primary3 hover:font-bold">Lunch</li>
+                    <li className="hover:text-primary3 hover:font-bold">Dinner</li>
+                    <li className="hover:text-primary3 hover:font-bold">Desert</li>
+                    <li className="hover:text-primary3 hover:font-bold">Drink</li>
+                    <li className="hover:text-primary3 hover:font-bold">Snack</li>
+                    <li className="hover:text-primary3 hover:font-bold">Soups</li>
                 </ul>
             </div>
             <div className="flex gap-5">

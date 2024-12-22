@@ -1,11 +1,11 @@
-import { inter } from '@/app/fonts/index';
+import { helvetica } from '@/app/fonts/index';
 import Image from 'next/image';
 import React from 'react';
 
 function Clients() {
     return (
         <div
-            className={`${inter.className} text-textColor bg-[url("/assets/clientbg.svg")] bg-no-repeat bg-cover`}
+            className={`${helvetica.className} text-textColor bg-[url("/assets/clientbg.svg")] bg-no-repeat bg-cover`}
         >
             <div className="bg-[#0D0D0D] py-28 opacity-[85%] flex gap-[162px] justify-center">
                 <div className="flex flex-col gap-6 items-center">

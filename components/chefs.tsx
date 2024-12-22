@@ -1,6 +1,7 @@
 import React from 'react';
 import ChefCard from './chefCard';
-import { greatVibes, inter } from '@/app/fonts/index';
+import { greatVibes, helvetica, inter } from '@/app/fonts/index';
+import Button from './ui/Button';
 
 function Chefs() {
     return (
@@ -9,7 +10,7 @@ function Chefs() {
         >
             <div className="place-items-center">
                 <h1 className={`${greatVibes.className} text-primary3 text-[32px]`}>Chefs</h1>
-                <h2 className="text-primary3 font-bold text-5xl">
+                <h2 className={`${helvetica.className} text-primary3 font-bold text-5xl`}>
                     Me<span className="text-textColor">et Our Chef</span>
                 </h2>
             </div>
@@ -20,9 +21,10 @@ function Chefs() {
                 <ChefCard image="/assets/chef4.svg" name="W.Readfroad" info="Chef" />
             </div>
             <div className="place-self-center">
-                <button className="border-[1px] border-primary3 rounded-[25px] py-[13px] px-[41px]">
-                    See More
-                </button>
+                <Button
+                    title="See More"
+                    className="border-[1px] bg-transparent border-primary3 rounded-[25px] py-[13px] px-[41px] hover:bg-primary3 hover:border-textColor"
+                />
             </div>
         </div>
     );
