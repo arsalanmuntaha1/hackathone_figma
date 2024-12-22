@@ -1,4 +1,4 @@
-import { greatVibes, helvetica, inter } from '@/app/fonts/index';
+import { greatVibes, helvetica } from '@/app/fonts/index';
 import Image from 'next/image';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
