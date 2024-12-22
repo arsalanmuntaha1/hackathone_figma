@@ -1,4 +1,4 @@
-import { inter } from '@/app/layout';
+import { inter } from '@/app/fonts/index';
 import Image from 'next/image';
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';

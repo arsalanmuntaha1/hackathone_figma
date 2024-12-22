@@ -1,4 +1,4 @@
-import { inter } from '@/app/layout';
+import { inter } from '@/app/fonts/index';
 import React from 'react';
 import { FiSearch } from 'react-icons/fi';
 import { LiaShoppingBagSolid } from 'react-icons/lia';

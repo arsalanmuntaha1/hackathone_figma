@@ -1,4 +1,4 @@
-import { greatVibes, inter } from '@/app/layout';
+import { greatVibes, inter } from '@/app/fonts/index';
 import Image from 'next/image';
 import React from 'react';
 import Menucard from './menucard';

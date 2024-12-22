@@ -1,4 +1,4 @@
-import { greatVibes, inter } from '@/app/layout';
+import { greatVibes, inter } from '@/app/fonts/index';
 import React from 'react';
 import { CiPlay1 } from 'react-icons/ci';
 
