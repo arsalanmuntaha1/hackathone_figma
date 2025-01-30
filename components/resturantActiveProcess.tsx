@@ -1,6 +1,7 @@
 import { greatVibes, helvetica, inter } from '@/app/fonts/index';
 import React from 'react';
 import { CiPlay1 } from 'react-icons/ci';
+import Button from './ui/Button';
 
 function ResturantActiveProcess() {
     return (
@@ -25,9 +26,7 @@ function ResturantActiveProcess() {
                     urna,{' '}
                 </p>
                 <div className="flex gap-6 float-right">
-                    <button className="border-[1px] border-primary3 font-bold rounded-[30px] py-[18px] px-[59px] transition-all hover:border-textColor hover:bg-primary3 ho">
-                        Read More
-                    </button>
+                   <Button title='Read More' className="border-[1px] border-primary3 font-bold rounded-[30px] py-[18px] px-[59px] transition-all hover:border-textColor hover:bg-primary3 "/>
                     <div className="p-[18px] bg-primary3 rounded-full transition-all hover:text-primary3 hover:bg-textColor ">
                         {' '}
                         <CiPlay1 size={24} />
