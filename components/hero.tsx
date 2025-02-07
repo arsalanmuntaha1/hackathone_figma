@@ -41,7 +41,7 @@ function Hero() {
                     </div>
                     <div className="w-4/12 flex gap-10 text-white items-center">
                         <div className="grid gap-2">
-                            <pre className={`text-primary3 text-3xl ${greatVibes.className}`}>
+                            <pre className={`text-primary3 text-2xl lg:text-3xl ${greatVibes.className}`}>
                                 Its Quick & Amusing!
                             </pre>
                             <div className="grid gap-8">
