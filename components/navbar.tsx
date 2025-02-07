@@ -7,22 +7,20 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 function Navbar() {
     return (
         <div className={`${inter.className} pt-[45px] `}>
-            <div className="text-center pb-4 ">
+            <div className="md:text-center pb-4 ">
                 <h1 className={`${helvetica.className} font-bold text-2xl text-primary3`}>
                     Food
                     <span className="text-textColor">tuck</span>
                 </h1>
             </div>
-            <div className="container flex justify-between items-center">
+            <div className="container flex justify-between md:gap-2 flex-col lg:flex-row items-center">
                 <div className="">
-                    <ul className="text-textColor flex gap-8 ">
+                    <ul className="text-textColor flex flex-col md:flex-row gap-x-8 gap-y-2">
                         <li>Home</li>
                         <li>Menu</li>
                         <li>Blog</li>
                         <li>Pages</li>
-                        <li className="flex">
-                            About <MdKeyboardArrowDown className="self-center " />{' '}
-                        </li>
+                        <li>About</li>
                         <li>Shop</li>
                         <li>Contact</li>
                     </ul>

@@ -1,14 +1,11 @@
 import { inter } from '@/app/fonts/index';
 import React from 'react';
-import Header from './header';
 import { PiCaretRightBold } from 'react-icons/pi';
 
 function OurMenu() {
     return (
         <div className={`${inter.className} bg-[url-(/assets/menubg.svg)] text-textColor`}>
-            <div>
-                <Header />
-            </div>
+            <div></div>
             <div className="py-[108px] text-center">
                 <h2 className="text-5xl font-bold">Our Menu</h2>
                 <div>
